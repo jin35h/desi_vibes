@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Desi Vibe USA Ethnic Fashion</title>
+  <meta name="description" content="View product details, fabric composition, embroidery work, and custom sizing inquiries for Desi Vibe's luxury Indian ethnic wear.">
+  <meta name="keywords" content="Indian fashion inquiry, Lehenga details, Saree details, Custom ethnic wear USA">
+  <link rel="canonical" href="https://desivibes.org/product-detail.html">
+
+  <!-- Open Graph / Social Tags -->
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Royal Plum Embroidered Lehenga | Desi Vibe">
+  <meta property="og:description" content="Crafted in rich royal plum silk with intricate gold zardozi threadwork and zari embroidery.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=1200">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Desi Vibe Product Detail">
+  <meta name="twitter:description" content="Handcrafted Indian ethnic silhouette details.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <div class="demo-badge-bar">
+    <i class="bi bi-shield-check me-1 text-gold"></i>
+    <strong>Desi Vibe Portfolio Demo:</strong> View product details and inquire directly for custom sizing consultations.
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Tradition, Styled Your Way. &nbsp;|&nbsp; Complimentary Express USA Shipping Consultations</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container-custom">
+      <nav class="navbar navbar-expand-lg py-3">
+        <!-- Logo -->
+        <a class="navbar-brand me-lg-5" href="index.html">
+          <span class="navbar-brand-logo">DESI <span>VIBE</span></span>
+          <span class="brand-tagline-sub">TRADITION, STYLED YOUR WAY</span>
+        </a>
+
+        <!-- Mobile Actions & Hamburger Toggle -->
+        <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+          <button class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search catalog">
+            <i class="bi bi-search"></i>
+          </button>
+          <button class="header-action-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#bagOffcanvas" aria-label="View demo bag" onclick="renderBagDrawerContent()">
+            <i class="bi bi-bag"></i>
+            <span class="bag-count-badge" style="display: none;">0</span>
+          </button>
+          <button class="navbar-toggler header-action-btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="collapse navbar-collapse" id="desktopNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=chaniya-choli">Chaniya Choli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=sarees">Sarees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=salwar-suits">Salwar Suits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=lehengas">Lehengas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=kurtis">Kurtis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html">All Collections</a>
+            </li>
+          </ul>
+
+          <!-- Desktop Icons -->
+          <div class="d-none d-lg-flex align-items-center gap-2">
+            <button class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search Catalog" aria-label="Search catalog">
+              <i class="bi bi-search"></i>
+            </button>
+            <button class="header-action-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#bagOffcanvas" title="Shopping Bag" aria-label="View demo bag" onclick="renderBagDrawerContent()">
+              <i class="bi bi-bag"></i>
+              <span class="bag-count-badge" style="display: none;">0</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Navigation Drawer -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <div id="mobileNavOffcanvasLabel" class="navbar-brand-logo" style="font-size: 22px;">
+        DESI <span>VIBE</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column mb-4">
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="index.html">Home</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=chaniya-choli">Chaniya Choli</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=sarees">Sarees</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=salwar-suits">Salwar Suits</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=lehengas">Lehengas</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=kurtis">Kurtis</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html">All Collections</a>
+        </li>
+      </ul>
+      <div class="bg-light p-3 rounded text-center">
+        <p class="small text-muted mb-2">USA Customer Consultation Line</p>
+        <a href="categories.html" class="btn btn-plum btn-sm w-100">Explore Catalog</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content" class="py-4 bg-ivory">
+    <div class="container-custom">
+      
+      <!-- Product Not Found View -->
+      <div id="productNotFoundView" class="empty-catalog-state d-none my-5">
+        <i class="bi bi-search-heart empty-catalog-icon d-block"></i>
+        <h2 class="font-heading mb-2">Style Not Found</h2>
+        <p class="text-muted fs-6 mb-4" style="max-width: 480px; margin-left: auto; margin-right: auto;">
+          The requested style code could not be found or may have been updated in our catalog.
+        </p>
+        <a href="categories.html" class="btn btn-plum">Explore Full Catalog</a>
+      </div>
+
+      <!-- Main Product Detail View -->
+      <div id="productDetailView" class="d-none">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="breadcrumb-custom">
+          <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="categories.html">Catalog</a></li>
+            <li class="breadcrumb-item"><a id="pDetailCategoryBreadcrumb" href="categories.html">Category</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Style Details</li>
+          </ol>
+        </nav>
+
+        <!-- Two Column Layout (58% image gallery, 42% information on desktop) -->
+        <div class="row g-4 mb-5">
+          
+          <!-- Image Gallery Column (58% width on lg) -->
+          <div class="col-lg-7">
+            <div class="product-gallery-container">
+              <!-- Thumbnails -->
+              <div id="pDetailThumbnails" class="product-thumbnails-col">
+                <!-- Filled dynamically by product.js -->
+              </div>
+              <!-- Main Image -->
+              <div class="product-main-img-wrap">
+                <span class="product-demo-badge">Demo Catalog</span>
+                <img id="pDetailMainImg" src="" alt="Product style preview" class="product-main-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Details Column (42% width on lg) -->
+          <div class="col-lg-5">
+            <div class="product-detail-info">
+              
+              <!-- Category Badge & Item Code -->
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span id="pDetailCategoryBadge" class="tag-badge">Category</span>
+                <span id="pDetailId" class="product-id-tag">Style ID: DV-000</span>
+              </div>
+
+              <!-- Title -->
+              <h1 id="pDetailTitle" class="product-detail-title">Style Name</h1>
+
+              <!-- Price -->
+              <div id="pDetailPrice" class="product-detail-price">$0</div>
+
+              <!-- Brief Description -->
+              <p id="pDetailDesc" class="text-muted mb-4 fs-6">
+                Product description preview...
+              </p>
+
+              <hr class="my-4 text-border">
+
+              <!-- Size Selector -->
+              <div class="mb-4">
+                <div class="selector-label">
+                  <span>Select Size:</span>
+                  <span id="selectedSizeText">S</span>
+                </div>
+                <div id="pDetailSizeSelector" class="size-chips-grid">
+                  <!-- Filled dynamically by product.js -->
+                </div>
+              </div>
+
+              <!-- Primary CTA Action Buttons -->
+              <div class="d-flex flex-column gap-3 mb-4">
+                <button type="button" id="inquireStyleBtn" class="btn btn-plum w-100 py-3 fs-6">
+                  <i class="bi bi-envelope-heart me-2"></i> Inquire About This Style
+                </button>
+                <button type="button" id="addToBagBtn" class="btn btn-outline-plum w-100 py-2">
+                  <i class="bi bi-bag-plus me-2"></i> Add to Demo Bag
+                </button>
+              </div>
+
+              <div class="p-3 rounded bg-sand-light border border-border mb-4">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-chat-quote-fill text-gold fs-3"></i>
+                  <div class="small text-muted">
+                    <strong>USA Personal Styling Advice:</strong> Need help with custom waist measurements, blouse stitching options, or urgent wedding dates? Click inquire above for free consultation.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordions for Details, Fit & Shipping -->
+              <div class="accordion accordion-custom" id="productAccordions">
+                
+                <!-- Accordion 1: Product Specifications -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingDetails">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetails" aria-expanded="true" aria-controls="collapseDetails">
+                      Fabric & Craft Specifications
+                    </button>
+                  </h2>
+                  <div id="collapseDetails" class="accordion-collapse collapse show" aria-labelledby="headingDetails" data-bs-parent="#productAccordions">
+                    <div id="pDetailAccordionBody" class="accordion-body">
+                      <!-- Filled by product.js -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion 2: Size & Fit Advice -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFit">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFit" aria-expanded="false" aria-controls="collapseFit">
+                      Sizing & Draping Fit
+                    </button>
+                  </h2>
+                  <div id="collapseFit" class="accordion-collapse collapse" aria-labelledby="headingFit" data-bs-parent="#productAccordions">
+                    <div id="pFitAccordionBody" class="accordion-body">
+                      Standard regular fit with adjustable waist drawstring and side zip. Custom tailoring parameters can be provided upon inquiry.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion 3: USA Dispatch & Consultations -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingShipping">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShipping" aria-expanded="false" aria-controls="collapseShipping">
+                      USA Shipping & Consultation Process
+                    </button>
+                  </h2>
+                  <div id="collapseShipping" class="accordion-collapse collapse" aria-labelledby="headingShipping" data-bs-parent="#productAccordions">
+                    <div class="accordion-body">
+                      <p class="mb-2">Desi Vibe operates dedicated dispatch pipelines for North American clients.</p>
+                      <ul>
+                        <li>Standard Dispatch: 5-7 business days across continental USA.</li>
+                        <li>Express Wedding Priority: Available upon direct request via inquiry.</li>
+                        <li>Demo Note: Inventory items are subject to custom tailor confirmation.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Related Products Section -->
+        <section class="pt-5 border-top">
+          <div class="d-flex justify-content-between align-items-end mb-4">
+            <div>
+              <span class="section-subtitle">Complementary Aesthetics</span>
+              <h2 class="h2-section mb-0">You May Also Like</h2>
+            </div>
+            <a href="categories.html" class="btn btn-outline-plum btn-sm-custom">Explore All Styles</a>
+          </div>
+
+          <div id="relatedProductsGrid" class="row g-4">
+            <!-- Filled dynamically by product.js -->
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Style Inquiry Modal -->
+  <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <div>
+            <h5 class="modal-title font-heading" id="inquiryModalLabel">Style Inquiry Consultation</h5>
+            <div id="modalProductId" class="small text-muted">Item Code: DV-000</div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          
+          <!-- Success Feedback Alert -->
+          <div id="inquirySuccessAlert" class="alert alert-success d-none py-4 text-center">
+            <i class="bi bi-check-circle-fill text-success display-5 mb-2 d-block"></i>
+            <h4 class="font-heading">Inquiry Received!</h4>
+            <p class="mb-3 text-muted">
+              Thank you for reaching out to Desi Vibe. Our USA fashion styling consultant will get in touch with you shortly to assist with fit, customization options, and availability.
+            </p>
+            <button type="button" class="btn btn-plum btn-sm" data-bs-dismiss="modal">Close Window</button>
+          </div>
+
+          <!-- Inquiry Form -->
+          <form id="styleInquiryForm">
+            <div class="p-3 bg-sand-light rounded mb-4 border border-border">
+              <h6 id="modalProductTitle" class="font-heading text-plum mb-1">Product Title</h6>
+              <div id="modalProductDetails" class="small text-muted">Selected specifications preview</div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="inquiryName" class="form-label small fw-semibold">Your Full Name *</label>
+                <input type="text" id="inquiryName" class="form-control" placeholder="e.g. Priya Sharma" required>
+              </div>
+              <div class="col-md-6">
+                <label for="inquiryEmail" class="form-label small fw-semibold">Email Address *</label>
+                <input type="email" id="inquiryEmail" class="form-control" placeholder="name@example.com" required>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="inquiryPhone" class="form-label small fw-semibold">Phone / WhatsApp (Optional)</label>
+                <input type="tel" id="inquiryPhone" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="col-md-6">
+                <label for="inquiryEventDate" class="form-label small fw-semibold">Target Event / Wear Date</label>
+                <input type="date" id="inquiryEventDate" class="form-control">
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="form-label small fw-semibold">Specific Sizing / Tailoring Notes</div>
+              <textarea id="inquiryMessage" class="form-control" rows="3" placeholder="Please specify if you need custom blouse stitching, length adjustments, or matching dupatta queries..."></textarea>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2">
+              <button type="button" class="btn btn-outline-plum" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-plum">Send Consultation Inquiry</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">DESI <span>VIBE</span></div>
+          <p class="footer-desc">
+            Tradition, Styled Your Way. Desi Vibe brings authentic, contemporary Indian ethnic fashion to customers across North America with handcrafted elegance.
+          </p>
+          <div class="d-flex gap-3 text-sand fs-5 mt-3">
+            <a href="categories.html" aria-label="Instagram" class="text-sand"><i class="bi bi-instagram"></i></a>
+            <a href="categories.html" aria-label="Facebook" class="text-sand"><i class="bi bi-facebook"></i></a>
+            <a href="categories.html" aria-label="Pinterest" class="text-sand"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Collections Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="categories.html?category=chaniya-choli">Chaniya Choli</a></li>
+            <li><a href="categories.html?category=sarees">Sarees</a></li>
+            <li><a href="categories.html?category=salwar-suits">Salwar Suits</a></li>
+            <li><a href="categories.html?category=lehengas">Lehengas</a></li>
+            <li><a href="categories.html?category=kurtis">Kurtis</a></li>
+            <li><a href="categories.html?category=indo-western">Indo-Western</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-heading">Boutique Services</h4>
+          <ul class="footer-links">
+            <li><a href="categories.html">Virtual Style Consultation</a></li>
+            <li><a href="categories.html">Custom Sizing Guide</a></li>
+            <li><a href="categories.html">Fabric & Care Instructions</a></li>
+            <li><a href="categories.html">USA Shipping Information</a></li>
+            <li><a href="categories.html">Inquiry Assistance</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Desi Vibe Updates</h4>
+          <p class="text-sand small mb-3">Subscribe for style drops and boutique catalog updates.</p>
+          <form id="newsletterForm" class="d-flex flex-column gap-2">
+            <input type="email" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-gold btn-sm w-100">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 DESI VIBE. All rights reserved.</div>
+        <div class="small text-sand opacity-75">
+          <span>Demo Static Catalog | Premium USA Boutique Concept</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-top modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title font-heading" id="searchModalLabel">Search Desi Vibe Catalog</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+            <input type="text" id="headerSearchInput" class="form-control border-start-0 ps-0" placeholder="Search by outfit name, category (e.g., Lehenga, Saree), color, or occasion..." aria-label="Search catalog">
+          </div>
+          <div id="searchResultsContainer">
+            <div class="text-center text-muted py-4">
+              <i class="bi bi-search fs-3 mb-2 d-block"></i>
+              <p class="mb-0">Type at least 2 characters to search catalog styles...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Demo Shopping Bag Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="bagOffcanvas" aria-labelledby="bagOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title font-heading" id="bagOffcanvasLabel">Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="bagOffcanvasBody">
+      <!-- Dynamically filled by main.js -->
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/product.js"></script>
+</body>
+</html>

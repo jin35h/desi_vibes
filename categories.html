@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Indian Ethnic Wear & Collections | Desi Vibe USA</title>
+  <meta name="description" content="Browse Desi Vibe's curated catalog of Lehengas, Sarees, Chaniya Cholis, Salwar Suits, Kurtis, and Indo-Western attire for weddings and festive occasions.">
+  <meta name="keywords" content="Indian fashion catalog, Lehengas catalog, Sarees filter, Ethnic wear USA">
+  <link rel="canonical" href="https://desivibes.org/categories.html">
+
+  <!-- Open Graph / Social Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Explore Indian Ethnic Wear | Desi Vibe Catalog">
+  <meta property="og:description" content="Browse handcrafted Indian outfits tailored for USA celebrations. Filter by category, occasion, color, and size.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1200">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Desi Vibe Catalog">
+  <meta name="twitter:description" content="Explore Indian Ethnic Wear collections.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <div class="demo-badge-bar">
+    <i class="bi bi-shield-check me-1 text-gold"></i>
+    <strong>Desi Vibe Portfolio Demo:</strong> Static interactive catalog. Filter by category, occasion, color, and size.
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Tradition, Styled Your Way. &nbsp;|&nbsp; Complimentary Express USA Shipping Consultations</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container-custom">
+      <nav class="navbar navbar-expand-lg py-3">
+        <!-- Logo -->
+        <a class="navbar-brand me-lg-5" href="index.html">
+          <span class="navbar-brand-logo">DESI <span>VIBE</span></span>
+          <span class="brand-tagline-sub">TRADITION, STYLED YOUR WAY</span>
+        </a>
+
+        <!-- Mobile Actions & Hamburger Toggle -->
+        <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+          <button class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search catalog">
+            <i class="bi bi-search"></i>
+          </button>
+          <button class="header-action-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#bagOffcanvas" aria-label="View demo bag" onclick="renderBagDrawerContent()">
+            <i class="bi bi-bag"></i>
+            <span class="bag-count-badge" style="display: none;">0</span>
+          </button>
+          <button class="navbar-toggler header-action-btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="collapse navbar-collapse" id="desktopNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=chaniya-choli">Chaniya Choli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=sarees">Sarees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=salwar-suits">Salwar Suits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=lehengas">Lehengas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=kurtis">Kurtis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link active" href="categories.html">All Collections</a>
+            </li>
+          </ul>
+
+          <!-- Desktop Icons -->
+          <div class="d-none d-lg-flex align-items-center gap-2">
+            <button class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search Catalog" aria-label="Search catalog">
+              <i class="bi bi-search"></i>
+            </button>
+            <button class="header-action-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#bagOffcanvas" title="Shopping Bag" aria-label="View demo bag" onclick="renderBagDrawerContent()">
+              <i class="bi bi-bag"></i>
+              <span class="bag-count-badge" style="display: none;">0</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Navigation Drawer -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <div id="mobileNavOffcanvasLabel" class="navbar-brand-logo" style="font-size: 22px;">
+        DESI <span>VIBE</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column mb-4">
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="index.html">Home</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=chaniya-choli">Chaniya Choli</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=sarees">Sarees</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=salwar-suits">Salwar Suits</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=lehengas">Lehengas</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=kurtis">Kurtis</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html">All Collections</a>
+        </li>
+      </ul>
+      <div class="bg-light p-3 rounded text-center">
+        <p class="small text-muted mb-2">USA Customer Consultation Line</p>
+        <a href="categories.html" class="btn btn-plum btn-sm w-100">Explore Catalog</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Catalog Header Banner -->
+    <section class="page-header-banner">
+      <div class="container-custom">
+        <nav aria-label="breadcrumb" class="breadcrumb-custom">
+          <ol class="breadcrumb mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Catalog</li>
+          </ol>
+        </nav>
+        <h1 class="h1-hero mb-3">Explore Indian Ethnic Wear</h1>
+        <p class="text-muted mb-0" style="max-width: 680px;">
+          Discover handcrafted Indian ethnic silhouettes tailored for USA celebrations. Filter by style, occasion, color palette, or fit to find your perfect ensemble.
+        </p>
+      </div>
+    </section>
+
+    <!-- Catalog Main Area -->
+    <section class="py-4 bg-ivory">
+      <div class="container-custom">
+        
+        <!-- Horizontal Category Chips -->
+        <div class="category-chips-wrapper">
+          <button type="button" class="category-chip active" data-category="all">
+            <i class="bi bi-grid-fill"></i> All Collections
+          </button>
+          <button type="button" class="category-chip" data-category="chaniya-choli">
+            Chaniya Choli
+          </button>
+          <button type="button" class="category-chip" data-category="sarees">
+            Sarees
+          </button>
+          <button type="button" class="category-chip" data-category="salwar-suits">
+            Salwar Suits
+          </button>
+          <button type="button" class="category-chip" data-category="lehengas">
+            Lehengas
+          </button>
+          <button type="button" class="category-chip" data-category="kurtis">
+            Kurtis
+          </button>
+          <button type="button" class="category-chip" data-category="indo-western">
+            Indo-Western
+          </button>
+        </div>
+
+        <!-- Controls Bar (Result Count, Filter Drawer Trigger, Sort Dropdown) -->
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4 pb-3 border-bottom">
+          <div class="d-flex align-items-center gap-3">
+            <!-- Mobile Filter Trigger -->
+            <button class="btn btn-outline-plum d-lg-none btn-sm-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileFilterDrawer" aria-controls="mobileFilterDrawer">
+              <i class="bi bi-sliders me-1"></i> Filter Catalog
+            </button>
+
+            <span id="catalogResultCount" class="text-muted fw-medium" style="font-size: 14px;">
+              Loading catalog styles...
+            </span>
+          </div>
+
+          <!-- Sorting Selector -->
+          <div class="d-flex align-items-center gap-2">
+            <label for="sortProductsSelect" class="form-label mb-0 small text-muted text-nowrap">Sort By:</label>
+            <select id="sortProductsSelect" class="form-select form-select-sm border-secondary-subtle" style="width: 170px;">
+              <option value="featured">Featured First</option>
+              <option value="name-asc">Name A–Z</option>
+              <option value="name-desc">Name Z–A</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Desktop Sidebar Filters (Column 1) -->
+          <div class="col-lg-3 d-none d-lg-block">
+            <aside class="filter-sidebar-card">
+              <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+                <h5 class="font-heading mb-0 fs-5">Filters</h5>
+                <button type="button" class="btn btn-link btn-sm p-0 text-plum clear-all-filters-btn">Clear All</button>
+              </div>
+
+              <!-- Occasion Filter -->
+              <div class="filter-group">
+                <div class="filter-group-title">Occasion</div>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="weddings">
+                  <span>Grand Weddings</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="festive">
+                  <span>Festive Celebrations</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="reception">
+                  <span>Reception & Cocktail</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="casual">
+                  <span>Casual Elegance</span>
+                </label>
+              </div>
+
+              <!-- Color Palette Filter -->
+              <div class="filter-group">
+                <div class="filter-group-title">Color Palette</div>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="plum">
+                  <span>Royal Plum</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="ivory">
+                  <span>Warm Ivory</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="blue">
+                  <span>Midnight Blue</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="gold">
+                  <span>Muted Gold</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="pink">
+                  <span>Rose Pink</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="green">
+                  <span>Emerald Green</span>
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="beige">
+                  <span>Sand Beige</span>
+                </label>
+              </div>
+
+              <!-- Size Filter -->
+              <div class="filter-group">
+                <div class="filter-group-title">Available Sizes</div>
+                <div class="size-chips-grid">
+                  <button type="button" class="size-chip-btn" data-size="XS">XS</button>
+                  <button type="button" class="size-chip-btn" data-size="S">S</button>
+                  <button type="button" class="size-chip-btn" data-size="M">M</button>
+                  <button type="button" class="size-chip-btn" data-size="L">L</button>
+                  <button type="button" class="size-chip-btn" data-size="XL">XL</button>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <button type="button" class="btn btn-plum w-100 btn-sm-custom clear-all-filters-btn">Reset All Filters</button>
+              </div>
+            </aside>
+          </div>
+
+          <!-- Product Grid Area (Column 2) -->
+          <div class="col-lg-9">
+            <!-- Empty State -->
+            <div id="catalogEmptyState" class="empty-catalog-state d-none">
+              <i class="bi bi-funnel empty-catalog-icon d-block"></i>
+              <h3 class="font-heading mb-2">No Matching Styles Found</h3>
+              <p class="text-muted fs-6 mb-4" style="max-width: 480px; margin-left: auto; margin-right: auto;">
+                We couldn't find any products matching your active filter criteria. Try resetting your selected filters or exploring all collections.
+              </p>
+              <button type="button" class="btn btn-plum clear-all-filters-btn">View All Collections</button>
+            </div>
+
+            <!-- Dynamic Product Grid -->
+            <div id="catalogProductGrid" class="row g-4">
+              <!-- Dynamically populated by categories.js -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Filter Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileFilterDrawer" aria-labelledby="mobileFilterDrawerLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title font-heading" id="mobileFilterDrawerLabel">Filter Styles</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <span class="text-muted small">Refine your selection</span>
+        <button type="button" class="btn btn-link btn-sm p-0 text-plum clear-all-filters-btn">Clear All</button>
+      </div>
+
+      <!-- Mobile Occasion Filter -->
+      <div class="filter-group mb-4">
+        <div class="filter-group-title">Occasion</div>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="weddings">
+          <span>Grand Weddings</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="festive">
+          <span>Festive Celebrations</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="reception">
+          <span>Reception & Cocktail</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="occasion" value="casual">
+          <span>Casual Elegance</span>
+        </label>
+      </div>
+
+      <!-- Mobile Color Palette Filter -->
+      <div class="filter-group mb-4">
+        <div class="filter-group-title">Color Palette</div>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="plum">
+          <span>Royal Plum</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="ivory">
+          <span>Warm Ivory</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="blue">
+          <span>Midnight Blue</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="gold">
+          <span>Muted Gold</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="pink">
+          <span>Rose Pink</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="green">
+          <span>Emerald Green</span>
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" class="filter-checkbox" data-filter-type="color" value="beige">
+          <span>Sand Beige</span>
+        </label>
+      </div>
+
+      <!-- Mobile Size Filter -->
+      <div class="filter-group mb-4">
+        <div class="filter-group-title">Available Sizes</div>
+        <div class="size-chips-grid">
+          <button type="button" class="size-chip-btn" data-size="XS">XS</button>
+          <button type="button" class="size-chip-btn" data-size="S">S</button>
+          <button type="button" class="size-chip-btn" data-size="M">M</button>
+          <button type="button" class="size-chip-btn" data-size="L">L</button>
+          <button type="button" class="size-chip-btn" data-size="XL">XL</button>
+        </div>
+      </div>
+
+      <div class="pt-3">
+        <button type="button" class="btn btn-plum w-100" data-bs-dismiss="offcanvas">Apply Filters</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">DESI <span>VIBE</span></div>
+          <p class="footer-desc">
+            Tradition, Styled Your Way. Desi Vibe brings authentic, contemporary Indian ethnic fashion to customers across North America with handcrafted elegance.
+          </p>
+          <div class="d-flex gap-3 text-sand fs-5 mt-3">
+            <a href="categories.html" aria-label="Instagram" class="text-sand"><i class="bi bi-instagram"></i></a>
+            <a href="categories.html" aria-label="Facebook" class="text-sand"><i class="bi bi-facebook"></i></a>
+            <a href="categories.html" aria-label="Pinterest" class="text-sand"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Collections Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="categories.html?category=chaniya-choli">Chaniya Choli</a></li>
+            <li><a href="categories.html?category=sarees">Sarees</a></li>
+            <li><a href="categories.html?category=salwar-suits">Salwar Suits</a></li>
+            <li><a href="categories.html?category=lehengas">Lehengas</a></li>
+            <li><a href="categories.html?category=kurtis">Kurtis</a></li>
+            <li><a href="categories.html?category=indo-western">Indo-Western</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-heading">Boutique Services</h4>
+          <ul class="footer-links">
+            <li><a href="categories.html">Virtual Style Consultation</a></li>
+            <li><a href="categories.html">Custom Sizing Guide</a></li>
+            <li><a href="categories.html">Fabric & Care Instructions</a></li>
+            <li><a href="categories.html">USA Shipping Information</a></li>
+            <li><a href="categories.html">Inquiry Assistance</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Desi Vibe Updates</h4>
+          <p class="text-sand small mb-3">Subscribe for style drops and boutique catalog updates.</p>
+          <form id="newsletterForm" class="d-flex flex-column gap-2">
+            <input type="email" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-gold btn-sm w-100">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 DESI VIBE. All rights reserved.</div>
+        <div class="small text-sand opacity-75">
+          <span>Demo Static Catalog | Premium USA Boutique Concept</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-top modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title font-heading" id="searchModalLabel">Search Desi Vibe Catalog</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+            <input type="text" id="headerSearchInput" class="form-control border-start-0 ps-0" placeholder="Search by outfit name, category (e.g., Lehenga, Saree), color, or occasion..." aria-label="Search catalog">
+          </div>
+          <div id="searchResultsContainer">
+            <div class="text-center text-muted py-4">
+              <i class="bi bi-search fs-3 mb-2 d-block"></i>
+              <p class="mb-0">Type at least 2 characters to search catalog styles...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Demo Shopping Bag Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="bagOffcanvas" aria-labelledby="bagOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title font-heading" id="bagOffcanvasLabel">Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="bagOffcanvasBody">
+      <!-- Dynamically filled by main.js -->
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/categories.js"></script>
+</body>
+</html>

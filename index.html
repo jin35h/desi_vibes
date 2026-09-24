@@ -3,458 +3,601 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desi Vibe | Premium Indian Ethnic Wear in USA</title>
-  <meta name="description" content="Discover premium Indian ethnic fashion in the USA. Browse designer lehengas, Navratri chaniya choli, wedding sarees, salwar suits, and Indo-Western attire at Desi Vibe.">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Desi Vibe | Premium Indian Ethnic Fashion Boutique USA</title>
+  <meta name="description" content="Discover premium Indian ethnic fashion tailored for USA celebrations. Explore timeless Lehengas, Sarees, Chaniya Cholis, Salwar Suits, Kurtis, and Indo-Western attire.">
+  <meta name="keywords" content="Indian ethnic wear, Lehengas USA, Sarees online USA, Chaniya Choli, Salwar Suits, Desi Vibe fashion">
+  <link rel="canonical" href="https://desivibes.org/index.html">
+
+  <!-- Open Graph / Social Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Desi Vibe | Tradition, Styled Your Way">
+  <meta property="og:description" content="Discover timeless Indian fashion curated for contemporary celebrations in the USA.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1200">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Desi Vibe | Indian Ethnic Fashion">
+  <meta name="twitter:description" content="Premium USA-based Indian ethnic fashion boutique.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1200">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured JSON-LD Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Desi Vibe",
+    "description": "USA-based Indian Ethnic Fashion Boutique specializing in Lehengas, Sarees, Chaniya Cholis, and Salwar Suits.",
+    "slogan": "Tradition, Styled Your Way.",
+    "url": "https://desivibes.org",
+    "currenciesAccepted": "USD"
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Announcement Bar -->
-  <div class="announcement-bar">
-    <span>Complimentary Shipping Across USA on Inquiries Over $250 • Personal US Styling Consultations Available <strong>Book Now</strong></span>
+  <!-- Demo Notice Banner -->
+  <div class="demo-badge-bar">
+    <i class="bi bi-shield-check me-1 text-gold"></i>
+    <strong>Desi Vibe Portfolio Demo:</strong> Explore catalog styles and inquiry features. This is a static boutique demo.
   </div>
 
-  <!-- Header Navigation -->
-  <header class="header-site">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo">
-        <span class="brand-logo-text">Desi Vibe</span>
-        <span class="brand-logo-sub">Indian Ethnic Wear · USA</span>
-      </a>
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Tradition, Styled Your Way. &nbsp;|&nbsp; Complimentary Express USA Shipping Consultations</span>
+  </div>
 
-      <nav class="nav-menu-desktop">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="category.html" class="nav-link">Shop Collections</a>
-        <a href="category.html?cat=lehengas" class="nav-link">Lehengas</a>
-        <a href="category.html?cat=chaniya-choli" class="nav-link">Chaniya Choli</a>
-        <a href="category.html?cat=sarees" class="nav-link">Sarees</a>
-        <a href="category.html?cat=salwar-kameez" class="nav-link">Salwar Suits</a>
-        <a href="category.html?cat=indo-western" class="nav-link">Indo-Western</a>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container-custom">
+      <nav class="navbar navbar-expand-lg py-3">
+        <!-- Logo -->
+        <a class="navbar-brand me-lg-5" href="index.html">
+          <span class="navbar-brand-logo">DESI <span>VIBE</span></span>
+          <span class="brand-tagline-sub">TRADITION, STYLED YOUR WAY</span>
+        </a>
+
+        <!-- Mobile Actions & Hamburger Toggle -->
+        <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+          <button class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search catalog">
+            <i class="bi bi-search"></i>
+          </button>
+          <button class="header-action-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#bagOffcanvas" aria-label="View demo bag" onclick="renderBagDrawerContent()">
+            <i class="bi bi-bag"></i>
+            <span class="bag-count-badge" style="display: none;">0</span>
+          </button>
+          <button class="navbar-toggler header-action-btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-3"></i>
+          </button>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="collapse navbar-collapse" id="desktopNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=chaniya-choli">Chaniya Choli</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=sarees">Sarees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=salwar-suits">Salwar Suits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=lehengas">Lehengas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html?category=kurtis">Kurtis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link site-nav-link" href="categories.html">All Collections</a>
+            </li>
+          </ul>
+
+          <!-- Desktop Icons -->
+          <div class="d-none d-lg-flex align-items-center gap-2">
+            <button class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search Catalog" aria-label="Search catalog">
+              <i class="bi bi-search"></i>
+            </button>
+            <button class="header-action-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#bagOffcanvas" title="Shopping Bag" aria-label="View demo bag" onclick="renderBagDrawerContent()">
+              <i class="bi bi-bag"></i>
+              <span class="bag-count-badge" style="display: none;">0</span>
+            </button>
+          </div>
+        </div>
       </nav>
-
-      <div class="header-actions">
-        <button class="header-action-btn trigger-search-btn" aria-label="Search Catalog">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        </button>
-        <button class="btn-primary trigger-enquiry-btn" style="height: 42px; font-size: 12px; padding: 0 18px;" data-id="DV-301" data-name="General Inquiry" data-code="GENERAL">
-          Enquire Now
-        </button>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
-      </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer" id="mobile-drawer">
-    <div class="mobile-drawer-content">
-      <div>
-        <div class="mobile-drawer-header">
-          <a href="index.html" class="brand-logo">
-            <span class="brand-logo-text">Desi Vibe</span>
-            <span class="brand-logo-sub">Ethnic Fashion USA</span>
-          </a>
-          <button id="mobile-drawer-close" style="font-size: 24px; color: var(--color-charcoal);">&times;</button>
-        </div>
-        <div class="mobile-drawer-nav">
-          <a href="index.html" class="mobile-drawer-link">Home <span>&rarr;</span></a>
-          <a href="category.html" class="mobile-drawer-link">All Collections <span>&rarr;</span></a>
-          <a href="category.html?cat=lehengas" class="mobile-drawer-link">Wedding Lehengas <span>&rarr;</span></a>
-          <a href="category.html?cat=chaniya-choli" class="mobile-drawer-link">Chaniya Choli <span>&rarr;</span></a>
-          <a href="category.html?cat=sarees" class="mobile-drawer-link">Designer Sarees <span>&rarr;</span></a>
-          <a href="category.html?cat=salwar-kameez" class="mobile-drawer-link">Salwar Suits <span>&rarr;</span></a>
-          <a href="category.html?cat=indo-western" class="mobile-drawer-link">Indo-Western <span>&rarr;</span></a>
-          <a href="category.html?cat=kidswear" class="mobile-drawer-link">Kidswear <span>&rarr;</span></a>
-        </div>
+  <!-- Mobile Offcanvas Navigation Drawer -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <div id="mobileNavOffcanvasLabel" class="navbar-brand-logo" style="font-size: 22px;">
+        DESI <span>VIBE</span>
       </div>
-      <div style="margin-top: 32px;">
-        <button class="btn-primary trigger-enquiry-btn" style="width: 100%;" data-id="DV-301" data-name="General Inquiry" data-code="GENERAL">
-          Enquire About an Outfit
-        </button>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column mb-4">
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="index.html">Home</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=chaniya-choli">Chaniya Choli</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=sarees">Sarees</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=salwar-suits">Salwar Suits</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=lehengas">Lehengas</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html?category=kurtis">Kurtis</a>
+        </li>
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link site-nav-link text-dark fs-5" href="categories.html">All Collections</a>
+        </li>
+      </ul>
+      <div class="bg-light p-3 rounded text-center">
+        <p class="small text-muted mb-2">USA Customer Consultation Line</p>
+        <a href="categories.html" class="btn btn-plum btn-sm w-100">Explore Catalog</a>
       </div>
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span style="font-size: 14px;">✦</span> Contemporary Indian Boutique
+  <main id="main-content">
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="hero-section">
+      <div class="container-custom">
+        <div class="hero-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-7 order-lg-2">
+              <div class="hero-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1600" alt="Indian ethnic fashion showcase - Royal Plum Lehenga and saree styling" class="hero-img">
+              </div>
+            </div>
+            <div class="col-lg-5 order-lg-1">
+              <div class="hero-content">
+                <span class="hero-tag">USA Ethnic Boutique</span>
+                <h1 class="hero-title h1-hero">Tradition, Styled Your Way.</h1>
+                <p class="hero-desc">
+                  Discover Indian fashion that feels like you. From festive favorites to timeless everyday elegance, find pieces that celebrate your unique style with unmatched royal craftsmanship.
+                </p>
+                <div class="hero-actions">
+                  <a href="categories.html" class="btn btn-plum">
+                    Explore Collections <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <a href="#editorialStory" class="btn btn-outline-plum">
+                    Discover Desi Vibe
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h1 class="hero-heading">
-          Tradition, beautifully yours.
-        </h1>
-        <p class="hero-subtext">
-          Your roots. Your style. Your moment. Experience authentic Indian ethnic fashion curated specially for USA weddings, festive celebrations, and milestone moments.
+      </div>
+    </section>
+
+    <!-- SECTION 2: SHOP BY CATEGORY -->
+    <section class="py-5 bg-ivory">
+      <div class="container-custom">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">Curated Silhouettes</span>
+          <h2 class="h2-section">Shop by Category</h2>
+          <p class="text-muted mx-auto" style="max-width: 600px;">
+            Explore handcrafted ensembles tailored for weddings, festivals, and cultural gatherings across the USA.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1. Chaniya Choli -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="categories.html?category=chaniya-choli" class="category-card">
+              <div class="category-img-wrap">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800" alt="Chaniya Choli collection" class="category-img" loading="lazy">
+                <div class="category-overlay">
+                  <h3 class="category-title">Chaniya Choli</h3>
+                  <span class="category-link-text">Shop <i class="bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 2. Sarees -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="categories.html?category=sarees" class="category-card">
+              <div class="category-img-wrap">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800" alt="Sarees collection" class="category-img" loading="lazy">
+                <div class="category-overlay">
+                  <h3 class="category-title">Sarees</h3>
+                  <span class="category-link-text">Shop <i class="bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 3. Salwar Suits -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="categories.html?category=salwar-suits" class="category-card">
+              <div class="category-img-wrap">
+                <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&q=80&w=800" alt="Salwar Suits collection" class="category-img" loading="lazy">
+                <div class="category-overlay">
+                  <h3 class="category-title">Salwar Suits</h3>
+                  <span class="category-link-text">Shop <i class="bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 4. Lehengas -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="categories.html?category=lehengas" class="category-card">
+              <div class="category-img-wrap">
+                <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800" alt="Lehengas collection" class="category-img" loading="lazy">
+                <div class="category-overlay">
+                  <h3 class="category-title">Lehengas</h3>
+                  <span class="category-link-text">Shop <i class="bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 5. Kurtis -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="categories.html?category=kurtis" class="category-card">
+              <div class="category-img-wrap">
+                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=800" alt="Kurtis collection" class="category-img" loading="lazy">
+                <div class="category-overlay">
+                  <h3 class="category-title">Kurtis</h3>
+                  <span class="category-link-text">Shop <i class="bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 6. Indo-Western -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="categories.html?category=indo-western" class="category-card">
+              <div class="category-img-wrap">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800" alt="Indo-Western collection" class="category-img" loading="lazy">
+                <div class="category-overlay">
+                  <h3 class="category-title">Indo-Western</h3>
+                  <span class="category-link-text">Shop <i class="bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EDITORIAL BRAND STORY -->
+    <section id="editorialStory" class="editorial-section">
+      <div class="container-custom">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="editorial-card">
+              <span class="editorial-tag">Our Craft & Legacy</span>
+              <h2 class="editorial-title h2-section">Indian Fashion, Reimagined for North America</h2>
+              <p class="editorial-text">
+                At Desi Vibe, we believe ethnic fashion should feel effortlessly regal, accessible, and personal. Founded with a vision to connect South Asian culture with contemporary design, every garment is thoughtfully tailored in India and brought straight to fashion enthusiasts across the United States.
+              </p>
+              <p class="editorial-text">
+                From hand-loomed silk sarees to intricately embroidered festive lehengas, our designs fuse age-old embroidery traditions with breathable, comfortable fits designed for modern celebrations.
+              </p>
+              <div class="editorial-features">
+                <div>
+                  <div class="feature-item-title">Custom Styling Advice</div>
+                  <p class="feature-item-desc">Personalized consultations for sizing, draping, and event themes.</p>
+                </div>
+                <div>
+                  <div class="feature-item-title">USA Direct Dispatch</div>
+                  <p class="feature-item-desc">Hassle-free shipping and nationwide customer service.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="rounded overflow-hidden shadow-lg border border-gold" style="aspect-ratio: 4/5;">
+              <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=80&w=1000" alt="Desi Vibe fabric and weaving craftsmanship" class="w-100 h-100 object-fit-cover" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FEATURED DEMO COLLECTION -->
+    <section class="py-5 bg-ivory">
+      <div class="container-custom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+          <div>
+            <span class="section-subtitle">Curated Highlights</span>
+            <h2 class="h2-section mb-0">Featured Demo Collection</h2>
+          </div>
+          <a href="categories.html" class="btn btn-outline-plum btn-sm-custom mt-3 mt-md-0">
+            View All Styles <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <!-- Featured Product 1 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <a href="product-detail.html?id=DV-LH-001" class="product-img-wrap">
+                <span class="product-demo-badge">Demo Style</span>
+                <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800" alt="Royal Plum Embroidered Lehenga" class="product-img" loading="lazy">
+              </a>
+              <div class="product-info">
+                <div class="product-category-name">Lehengas</div>
+                <h3 class="product-title" style="font-size: 17px;">
+                  <a href="product-detail.html?id=DV-LH-001">Royal Plum Embroidered Lehenga</a>
+                </h3>
+                <div class="product-price">$650</div>
+                <div class="product-card-action">
+                  <a href="product-detail.html?id=DV-LH-001" class="btn btn-outline-plum btn-sm-custom w-100">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Product 2 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <a href="product-detail.html?id=DV-CC-002" class="product-img-wrap">
+                <span class="product-demo-badge">Demo Style</span>
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800" alt="Ivory Floral Chaniya Choli" class="product-img" loading="lazy">
+              </a>
+              <div class="product-info">
+                <div class="product-category-name">Chaniya Choli</div>
+                <h3 class="product-title" style="font-size: 17px;">
+                  <a href="product-detail.html?id=DV-CC-002">Ivory Floral Chaniya Choli</a>
+                </h3>
+                <div class="product-price">$520</div>
+                <div class="product-card-action">
+                  <a href="product-detail.html?id=DV-CC-002" class="btn btn-outline-plum btn-sm-custom w-100">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Product 3 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <a href="product-detail.html?id=DV-SR-003" class="product-img-wrap">
+                <span class="product-demo-badge">Demo Style</span>
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800" alt="Midnight Blue Silk Saree" class="product-img" loading="lazy">
+              </a>
+              <div class="product-info">
+                <div class="product-category-name">Sarees</div>
+                <h3 class="product-title" style="font-size: 17px;">
+                  <a href="product-detail.html?id=DV-SR-003">Midnight Blue Silk Saree</a>
+                </h3>
+                <div class="product-price">$380</div>
+                <div class="product-card-action">
+                  <a href="product-detail.html?id=DV-SR-003" class="btn btn-outline-plum btn-sm-custom w-100">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Product 4 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <a href="product-detail.html?id=DV-KT-004" class="product-img-wrap">
+                <span class="product-demo-badge">Demo Style</span>
+                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=800" alt="Rose Pink Embroidered Kurti" class="product-img" loading="lazy">
+              </a>
+              <div class="product-info">
+                <div class="product-category-name">Kurtis</div>
+                <h3 class="product-title" style="font-size: 17px;">
+                  <a href="product-detail.html?id=DV-KT-004">Rose Pink Embroidered Kurti</a>
+                </h3>
+                <div class="product-price">$195</div>
+                <div class="product-card-action">
+                  <a href="product-detail.html?id=DV-KT-004" class="btn btn-outline-plum btn-sm-custom w-100">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: SHOP BY OCCASION -->
+    <section class="py-5 bg-sand-light">
+      <div class="container-custom">
+        <div class="section-title-wrap">
+          <span class="section-subtitle">Dressed For Every Moment</span>
+          <h2 class="h2-section">Shop by Occasion</h2>
+          <p class="text-muted mx-auto" style="max-width: 600px;">
+            Whether attending a lavish wedding, Navratri garba, or intimate family puja, discover the perfect dress code.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Occasion 1 -->
+          <div class="col-md-4">
+            <a href="categories.html?occasion=weddings" class="occasion-card">
+              <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=1000" alt="Grand Weddings collection" class="occasion-img" loading="lazy">
+              <div class="occasion-overlay">
+                <h3 class="occasion-title">Grand Weddings</h3>
+                <p class="occasion-desc">Royal bridal lehengas, heavy silk sarees, and zardozi embroidered ensembles.</p>
+                <span class="text-gold fw-semibold fs-6">Explore Wedding Wear <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Occasion 2 -->
+          <div class="col-md-4">
+            <a href="categories.html?occasion=festive" class="occasion-card">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=1000" alt="Festive Celebrations collection" class="occasion-img" loading="lazy">
+              <div class="occasion-overlay">
+                <h3 class="occasion-title">Festive Celebrations</h3>
+                <p class="occasion-desc">Vibrant Navratri chaniya cholis, Diwali Anarkalis, and festive shararas.</p>
+                <span class="text-gold fw-semibold fs-6">Explore Festive Wear <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Occasion 3 -->
+          <div class="col-md-4">
+            <a href="categories.html?occasion=reception" class="occasion-card">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=1000" alt="Cocktail & Receptions collection" class="occasion-img" loading="lazy">
+              <div class="occasion-overlay">
+                <h3 class="occasion-title">Reception & Cocktail</h3>
+                <p class="occasion-desc">Contemporary Indo-Western draped gowns, sheer capes, and metallic sarees.</p>
+                <span class="text-gold fw-semibold fs-6">Explore Cocktail Styles <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CLOSING CTA -->
+    <section class="py-5 text-center bg-plum text-ivory">
+      <div class="container-custom py-4">
+        <span class="text-gold text-uppercase fw-semibold tracking-wider d-block mb-2" style="font-size: 13px;">Find Your Next Look</span>
+        <h2 class="text-white h2-section mb-3">Ready to Style Your Tradition?</h2>
+        <p class="text-sand mx-auto fs-6 mb-4" style="max-width: 600px;">
+          Browse our complete catalog of ethnic wear silhouettes crafted with authenticity and elegance.
         </p>
-        <div class="hero-actions">
-          <a href="category.html" class="btn-primary">
-            Explore Collections &rarr;
-          </a>
-          <button class="btn-secondary trigger-enquiry-btn" data-id="DV-301" data-name="Custom Styling Request" data-code="STYLING">
-            Book US Styling Inquiry
-          </button>
-        </div>
-      </div>
-
-      <div class="hero-visual-wrap">
-        <div class="hero-main-img-box">
-          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1200&auto=format&fit=crop" alt="Desi Vibe Wine Embroidered Lehenga" />
-        </div>
-        <div class="hero-accent-card">
-          <span class="hero-accent-card-num">US Boutique</span>
-          <span class="hero-accent-card-txt">Tailored fitting guidance, direct inquiry service, and guaranteed quality inspection before US dispatch.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Category Discovery Section -->
-  <section class="categories-section">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <span class="eyebrow-label">Curated Fashion Collections</span>
-          <h2 class="section-heading-h2" style="margin-top: 6px;">Shop by Category</h2>
-        </div>
-        <a href="category.html" class="btn-outline-berry">
-          View All Categories &rarr;
+        <a href="categories.html" class="btn btn-gold btn-lg">
+          Explore All Collections <i class="bi bi-bag-check ms-2"></i>
         </a>
       </div>
+    </section>
+  </main>
 
-      <div class="category-grid">
-        <a href="category.html?cat=lehengas" class="category-card">
-          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1000&auto=format&fit=crop" alt="Bridal & Wedding Lehengas" class="category-card-image" />
-          <div class="category-card-overlay">
-            <span class="category-card-count">42 Designs Available</span>
-            <h3 class="category-card-title">Wedding & Bridal Lehengas</h3>
-            <span class="category-card-cta">Explore Collection &rarr;</span>
-          </div>
-        </a>
-
-        <a href="category.html?cat=chaniya-choli" class="category-card">
-          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=1000&auto=format&fit=crop" alt="Navratri & Designer Choli" class="category-card-image" />
-          <div class="category-card-overlay">
-            <span class="category-card-count">38 Designs Available</span>
-            <h3 class="category-card-title">Navratri & Designer Choli</h3>
-            <span class="category-card-cta">Explore Collection &rarr;</span>
-          </div>
-        </a>
-
-        <a href="category.html?cat=sarees" class="category-card">
-          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=1000&auto=format&fit=crop" alt="Designer & Wedding Sarees" class="category-card-image" />
-          <div class="category-card-overlay">
-            <span class="category-card-count">56 Designs Available</span>
-            <h3 class="category-card-title">Designer & Wedding Sarees</h3>
-            <span class="category-card-cta">Explore Collection &rarr;</span>
-          </div>
-        </a>
-
-        <a href="category.html?cat=salwar-kameez" class="category-card">
-          <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1000&auto=format&fit=crop" alt="Salwar Kameez & Anarkalis" class="category-card-image" />
-          <div class="category-card-overlay">
-            <span class="category-card-count">45 Designs Available</span>
-            <h3 class="category-card-title">Salwar Kameez & Suits</h3>
-            <span class="category-card-cta">Explore Collection &rarr;</span>
-          </div>
-        </a>
-
-        <a href="category.html?cat=indo-western" class="category-card">
-          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=1000&auto=format&fit=crop" alt="Indo-Western Fusion" class="category-card-image" />
-          <div class="category-card-overlay">
-            <span class="category-card-count">29 Designs Available</span>
-            <h3 class="category-card-title">Indo-Western Fusion</h3>
-            <span class="category-card-cta">Explore Collection &rarr;</span>
-          </div>
-        </a>
-
-        <a href="category.html?cat=kidswear" class="category-card">
-          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=1000&auto=format&fit=crop" alt="Kidswear Collection" class="category-card-image" />
-          <div class="category-card-overlay">
-            <span class="category-card-count">24 Designs Available</span>
-            <h3 class="category-card-title">Kidswear Collection</h3>
-            <span class="category-card-cta">Explore Collection &rarr;</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Spotlight Section -->
-  <section class="spotlight-section">
-    <div class="container">
-      <div class="section-header-centered">
-        <span class="eyebrow-label">Bespoke Excellence</span>
-        <h2 class="section-heading-h2" style="margin-top: 6px;">Featured Arrivals & Bestsellers</h2>
-        <p class="body-text" style="margin-top: 12px;">Handpicked festive garments showcasing rich embroidery, authentic silks, and modern silhouettes.</p>
-      </div>
-
-      <div class="product-grid-4" id="home-featured-products">
-        <!-- Static Fallback Content -->
-        <div class="product-card">
-          <div class="product-card-image-wrap">
-            <span class="product-card-badge">Bestseller</span>
-            <span class="product-card-style-code">DV-301</span>
-            <a href="product.html?id=DV-301">
-              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop" alt="Wine Embroidered Lehenga Set" class="product-card-image" />
-            </a>
-            <div class="product-card-quick-act">
-              <button class="btn-primary trigger-enquiry-btn" style="height: 38px; font-size: 11px; padding: 0 16px;" data-id="DV-301" data-name="Wine Embroidered Lehenga Set" data-code="DV-301">Quick Enquiry</button>
-            </div>
-          </div>
-          <div class="product-card-content">
-            <span class="product-card-category">Bridal & Wedding Lehengas</span>
-            <h3 class="product-card-name"><a href="product.html?id=DV-301">Wine Embroidered Lehenga Set</a></h3>
-            <div class="product-card-footer">
-              <span class="product-card-price">$890</span>
-              <a href="product.html?id=DV-301" class="product-card-enquire-btn">View Details &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card-image-wrap">
-            <span class="product-card-style-code">DV-302</span>
-            <a href="product.html?id=DV-302">
-              <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=800&auto=format&fit=crop" alt="Midnight Navy Navratri Chaniya Choli" class="product-card-image" />
-            </a>
-            <div class="product-card-quick-act">
-              <button class="btn-primary trigger-enquiry-btn" style="height: 38px; font-size: 11px; padding: 0 16px;" data-id="DV-302" data-name="Midnight Navy Navratri Chaniya Choli" data-code="DV-302">Quick Enquiry</button>
-            </div>
-          </div>
-          <div class="product-card-content">
-            <span class="product-card-category">Designer Choli</span>
-            <h3 class="product-card-name"><a href="product.html?id=DV-302">Midnight Navy Navratri Chaniya Choli</a></h3>
-            <div class="product-card-footer">
-              <span class="product-card-price">$480</span>
-              <a href="product.html?id=DV-302" class="product-card-enquire-btn">View Details &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card-image-wrap">
-            <span class="product-card-badge">Bestseller</span>
-            <span class="product-card-style-code">DV-303</span>
-            <a href="product.html?id=DV-303">
-              <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=800&auto=format&fit=crop" alt="Royal Crimson Kanjivaram Silk Saree" class="product-card-image" />
-            </a>
-            <div class="product-card-quick-act">
-              <button class="btn-primary trigger-enquiry-btn" style="height: 38px; font-size: 11px; padding: 0 16px;" data-id="DV-303" data-name="Royal Crimson Kanjivaram Silk Saree" data-code="DV-303">Quick Enquiry</button>
-            </div>
-          </div>
-          <div class="product-card-content">
-            <span class="product-card-category">Designer & Wedding Sarees</span>
-            <h3 class="product-card-name"><a href="product.html?id=DV-303">Royal Crimson Kanjivaram Silk Saree</a></h3>
-            <div class="product-card-footer">
-              <span class="product-card-price">$650</span>
-              <a href="product.html?id=DV-303" class="product-card-enquire-btn">View Details &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card-image-wrap">
-            <span class="product-card-style-code">DV-305</span>
-            <a href="product.html?id=DV-305">
-              <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=800&auto=format&fit=crop" alt="Dusty Rose Indo-Western Jacket Set" class="product-card-image" />
-            </a>
-            <div class="product-card-quick-act">
-              <button class="btn-primary trigger-enquiry-btn" style="height: 38px; font-size: 11px; padding: 0 16px;" data-id="DV-305" data-name="Dusty Rose Indo-Western Jacket Set" data-code="DV-305">Quick Enquiry</button>
-            </div>
-          </div>
-          <div class="product-card-content">
-            <span class="product-card-category">Indo-Western</span>
-            <h3 class="product-card-name"><a href="product.html?id=DV-305">Dusty Rose Indo-Western Jacket Set</a></h3>
-            <div class="product-card-footer">
-              <span class="product-card-price">$530</span>
-              <a href="product.html?id=DV-305" class="product-card-enquire-btn">View Details &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 48px;">
-        <a href="category.html" class="btn-primary">
-          Browse Full Catalog &rarr;
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- USA Boutique Experience -->
-  <section class="boutique-experience-section">
-    <div class="container">
-      <div class="section-header-centered">
-        <span class="eyebrow-label">Designed For US Shoppers</span>
-        <h2 class="section-heading-h2" style="margin-top: 6px;">The Desi Vibe Distinction</h2>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-box">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-          </div>
-          <h3 class="feature-title">US Sizing & Fit Confidence</h3>
-          <p class="feature-desc">We convert Indian garment sizing into standard US sizing metrics with built-in alterable inner margins and step-by-step fitting guidance.</p>
-        </div>
-
-        <div class="feature-box">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-          </div>
-          <h3 class="feature-title">Direct USA Fulfillment</h3>
-          <p class="feature-desc">No unexpected customs taxes or overseas shipping delays. Priority dispatch across all US states with full tracking updates.</p>
-        </div>
-
-        <div class="feature-box">
-          <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          </div>
-          <h3 class="feature-title">Personalized Inquiry Service</h3>
-          <p class="feature-desc">Connect directly with our boutique stylists via WhatsApp or web form to verify exact stock, fabric feel, or customization before purchasing.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Banner Highlight -->
-  <section class="cta-banner-section">
-    <div class="container cta-banner-content">
-      <h2 class="cta-banner-title">Elevate Your Festive wardrobe</h2>
-      <p class="cta-banner-desc">Explore our full boutique catalog of hand-embroidered Lehengas, Chaniya Cholis, and Silk Sarees today.</p>
-      <a href="category.html" class="btn-primary" style="background-color: var(--color-white) !important; color: var(--color-berry) !important; border-color: var(--color-white);">
-        View Collection Catalog &rarr;
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer-site">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="brand-logo" style="margin-bottom: 12px;">
-            <span class="brand-logo-text" style="color: var(--color-ivory);">Desi Vibe</span>
-            <span class="brand-logo-sub" style="color: var(--color-gold);">Ethnic Fashion · USA</span>
-          </a>
-          <p class="footer-brand-desc">
-            A premium Indian ethnic fashion store based in the USA. Bringing contemporary elegance and heritage craftsmanship to your special moments.
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">DESI <span>VIBE</span></div>
+          <p class="footer-desc">
+            Tradition, Styled Your Way. Desi Vibe brings authentic, contemporary Indian ethnic fashion to customers across North America with handcrafted elegance.
           </p>
+          <div class="d-flex gap-3 text-sand fs-5 mt-3">
+            <a href="categories.html" aria-label="Instagram" class="text-sand"><i class="bi bi-instagram"></i></a>
+            <a href="categories.html" aria-label="Facebook" class="text-sand"><i class="bi bi-facebook"></i></a>
+            <a href="categories.html" aria-label="Pinterest" class="text-sand"><i class="bi bi-pinterest"></i></a>
+          </div>
         </div>
 
-        <div>
+        <!-- Collections Links -->
+        <div class="col-lg-2 col-md-6 col-6">
           <h4 class="footer-heading">Collections</h4>
-          <ul class="footer-links-list">
-            <li><a href="category.html?cat=lehengas">Wedding Lehengas</a></li>
-            <li><a href="category.html?cat=chaniya-choli">Navratri Chaniya Choli</a></li>
-            <li><a href="category.html?cat=sarees">Designer Silk Sarees</a></li>
-            <li><a href="category.html?cat=salwar-kameez">Salwar Suits & Anarkalis</a></li>
-            <li><a href="category.html?cat=indo-western">Indo-Western Fusion</a></li>
+          <ul class="footer-links">
+            <li><a href="categories.html?category=chaniya-choli">Chaniya Choli</a></li>
+            <li><a href="categories.html?category=sarees">Sarees</a></li>
+            <li><a href="categories.html?category=salwar-suits">Salwar Suits</a></li>
+            <li><a href="categories.html?category=lehengas">Lehengas</a></li>
+            <li><a href="categories.html?category=kurtis">Kurtis</a></li>
+            <li><a href="categories.html?category=indo-western">Indo-Western</a></li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="footer-heading">Customer Care</h4>
-          <ul class="footer-links-list">
-            <li><a href="product.html?id=DV-301">Inquiry & Fitting Guide</a></li>
-            <li><a href="#" onclick="alert('US Nationwide Shipping: Standard 3-5 business days delivery.'); return false;">USA Shipping Policy</a></li>
-            <li><a href="#" onclick="alert('Returns & Exchanges: Contact our US team within 7 days of delivery.'); return false;">Returns & Exchanges</a></li>
+        <!-- Customer Care -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-heading">Boutique Services</h4>
+          <ul class="footer-links">
+            <li><a href="categories.html">Virtual Style Consultation</a></li>
+            <li><a href="categories.html">Custom Sizing Guide</a></li>
+            <li><a href="categories.html">Fabric & Care Instructions</a></li>
+            <li><a href="categories.html">USA Shipping Information</a></li>
+            <li><a href="categories.html">Inquiry Assistance</a></li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="footer-heading">Boutique Contact (USA)</h4>
-          <p style="font-size: 14px; color: #D4CDC5; line-height: 1.6; margin-bottom: 16px;">
-            <strong>Email:</strong> care@desivibe.us<br>
-            <strong>WhatsApp / Call:</strong> +1 (800) 555-DESI
-          </p>
-          <button class="btn-outline-berry trigger-enquiry-btn" style="color: var(--color-gold-light) !important; border-color: var(--color-gold-light); width: 100%; height: 42px; font-size: 11px;" data-id="DV-301" data-name="Footer Contact Inquiry" data-code="FOOTER">
-            Send General Inquiry
-          </button>
+        <!-- Newsletter Subscription -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Desi Vibe Updates</h4>
+          <p class="text-sand small mb-3">Subscribe for style drops and boutique catalog updates.</p>
+          <form id="newsletterForm" class="d-flex flex-column gap-2">
+            <input type="email" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-gold btn-sm w-100">Subscribe</button>
+          </form>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Desi Vibe Ethnic Fashion USA. All rights reserved.</div>
+        <div>&copy; 2026 DESI VIBE. All rights reserved.</div>
+        <div class="small text-sand opacity-75">
+          <span>Demo Static Catalog | Premium USA Boutique Concept</span>
+        </div>
       </div>
     </div>
   </footer>
 
   <!-- Search Modal -->
-  <div class="search-modal" id="search-modal">
-    <div class="search-modal-container">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; color: white;">
-        <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-gold-light);">Search Desi Vibe Catalog</span>
-        <button id="close-search-btn" style="color: white; font-size: 28px;">&times;</button>
-      </div>
-      <div class="search-input-wrap">
-        <input type="text" id="global-search-input" placeholder="Search by outfit name, style code (e.g. DV-301), fabric, or category..." />
-      </div>
-      <div class="search-results-dropdown" id="search-results-dropdown"></div>
-    </div>
-  </div>
-
-  <!-- Global Enquiry Modal -->
-  <div class="modal-overlay" id="enquiry-modal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3 class="modal-title">Enquire About This Piece</h3>
-        <span class="modal-close-btn" id="close-enquiry-modal">&times;</span>
-      </div>
-      <div class="modal-body">
-        <div class="enquiry-product-summary">
-          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop" id="modal-summary-img" class="enquiry-product-img" alt="Selected Product" />
-          <div>
-            <h4 id="modal-summary-title" style="font-size: 16px; font-weight: 600; color: var(--color-charcoal);">Wine Embroidered Lehenga Set</h4>
-            <div id="modal-summary-code" style="font-size: 12px; color: var(--color-berry); font-weight: 600; margin-top: 4px;">Style Code: DV-301</div>
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-top modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title font-heading" id="searchModalLabel">Search Desi Vibe Catalog</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+            <input type="text" id="headerSearchInput" class="form-control border-start-0 ps-0" placeholder="Search by outfit name, category (e.g., Lehenga, Saree), color, or occasion..." aria-label="Search catalog">
+          </div>
+          <div id="searchResultsContainer">
+            <div class="text-center text-muted py-4">
+              <i class="bi bi-search fs-3 mb-2 d-block"></i>
+              <p class="mb-0">Type at least 2 characters to search catalog styles...</p>
+            </div>
           </div>
         </div>
-
-        <form id="enquiry-form">
-          <input type="hidden" id="enquiry-style-code" name="styleCode" value="DV-301" />
-          <input type="hidden" id="enquiry-product-name" name="productName" value="Wine Embroidered Lehenga Set" />
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-            <div>
-              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Your Name *</label>
-              <input type="text" class="form-input" required placeholder="e.g. Priya Sharma" />
-            </div>
-            <div>
-              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Email Address *</label>
-              <input type="email" class="form-input" required placeholder="name@example.com" />
-            </div>
-          </div>
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-            <div>
-              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Phone / WhatsApp *</label>
-              <input type="tel" class="form-input" required placeholder="+1 (555) 000-0000" />
-            </div>
-            <div>
-              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Preferred Size</label>
-              <input type="text" id="enquiry-selected-size" class="form-input" placeholder="e.g. Medium (M)" />
-            </div>
-          </div>
-
-          <div style="margin-bottom: 20px;">
-            <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Your Question or Customization Request</label>
-            <textarea class="form-textarea" rows="3" placeholder="Ask about price confirmation, available sizing, alterations, or delivery timeline in your US state..."></textarea>
-          </div>
-
-          <button type="submit" class="btn-primary" style="width: 100%;">
-            Submit Inquiry to Boutique Team
-          </button>
-        </form>
-
-        <div class="confirmation-box" id="enquiry-confirmation-box"></div>
       </div>
     </div>
   </div>
 
-  <script src="js/products.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Demo Shopping Bag Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="bagOffcanvas" aria-labelledby="bagOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title font-heading" id="bagOffcanvasLabel">Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="bagOffcanvasBody">
+      <!-- Dynamically filled by main.js -->
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
