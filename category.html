@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Indian Ethnic Collections | Desi Vibe USA</title>
+  <meta name="description" content="Browse Desi Vibe's curated collection of Indian ethnic wear in the USA. Filter by category, fabric, color, and size. Find wedding lehengas, sarees, suits, and chaniya cholis.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Complimentary Shipping Across USA on Inquiries Over $250 • Personal US Styling Consultations Available <strong>Book Now</strong></span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-site">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-logo-text">Desi Vibe</span>
+        <span class="brand-logo-sub">Indian Ethnic Wear · USA</span>
+      </a>
+
+      <nav class="nav-menu-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="category.html" class="nav-link active">Shop Collections</a>
+        <a href="category.html?cat=lehengas" class="nav-link">Lehengas</a>
+        <a href="category.html?cat=chaniya-choli" class="nav-link">Chaniya Choli</a>
+        <a href="category.html?cat=sarees" class="nav-link">Sarees</a>
+        <a href="category.html?cat=salwar-kameez" class="nav-link">Salwar Suits</a>
+        <a href="category.html?cat=indo-western" class="nav-link">Indo-Western</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-action-btn trigger-search-btn" aria-label="Search Catalog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="btn-primary trigger-enquiry-btn" style="height: 42px; font-size: 12px; padding: 0 18px;" data-id="DV-301" data-name="Category Page General Inquiry" data-code="CATALOG">
+          Enquire Now
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-content">
+      <div>
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-logo-text">Desi Vibe</span>
+            <span class="brand-logo-sub">Ethnic Fashion USA</span>
+          </a>
+          <button id="mobile-drawer-close" style="font-size: 24px; color: var(--color-charcoal);">&times;</button>
+        </div>
+        <div class="mobile-drawer-nav">
+          <a href="index.html" class="mobile-drawer-link">Home <span>&rarr;</span></a>
+          <a href="category.html" class="mobile-drawer-link">All Collections <span>&rarr;</span></a>
+          <a href="category.html?cat=lehengas" class="mobile-drawer-link">Wedding Lehengas <span>&rarr;</span></a>
+          <a href="category.html?cat=chaniya-choli" class="mobile-drawer-link">Chaniya Choli <span>&rarr;</span></a>
+          <a href="category.html?cat=sarees" class="mobile-drawer-link">Designer Sarees <span>&rarr;</span></a>
+          <a href="category.html?cat=salwar-kameez" class="mobile-drawer-link">Salwar Suits <span>&rarr;</span></a>
+          <a href="category.html?cat=indo-western" class="mobile-drawer-link">Indo-Western <span>&rarr;</span></a>
+          <a href="category.html?cat=kidswear" class="mobile-drawer-link">Kidswear <span>&rarr;</span></a>
+        </div>
+      </div>
+      <div style="margin-top: 32px;">
+        <button class="btn-primary trigger-enquiry-btn" style="width: 100%;" data-id="DV-301" data-name="General Inquiry" data-code="GENERAL">
+          Enquire About an Outfit
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Header Banner & Breadcrumbs -->
+  <div class="page-header-banner">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">HOME</a>
+        <span class="separator">/</span>
+        <a href="category.html">COLLECTIONS</a>
+        <span class="separator">/</span>
+        <span id="breadcrumb-current-cat" style="color: var(--color-berry); font-weight: 600;">ALL ETHNIC WEAR</span>
+      </div>
+      <h1 class="hero-heading" id="category-page-title" style="font-size: 44px;">
+        Shop Ethnic Wear Collections
+      </h1>
+      <p class="body-text" id="category-page-desc" style="margin-top: 10px; max-width: 680px;">
+        Explore our curated catalog of Indian festive ensembles. Image-first browsing with style codes, US size guides, and direct boutique enquiry.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Shop Layout Grid -->
+  <main class="container shop-layout">
+    <!-- Desktop Sidebar Filters -->
+    <aside class="filters-sidebar">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--color-gold);">
+        <span style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-berry);">Filter Catalog</span>
+        <button id="reset-filters-btn" style="font-size: 11px; color: var(--color-berry); text-decoration: underline; font-weight: 600;">Reset All</button>
+      </div>
+
+      <!-- Filter: Categories -->
+      <div class="filter-group">
+        <div class="filter-title">Category</div>
+        <div class="filter-options-list" id="category-filter-list">
+          <label class="filter-checkbox-label">
+            <input type="checkbox" value="all" checked class="cat-filter-checkbox">
+            <span>All Categories</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" value="lehengas" class="cat-filter-checkbox">
+            <span>Lehengas</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" value="chaniya-choli" class="cat-filter-checkbox">
+            <span>Chaniya Choli</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" value="sarees" class="cat-filter-checkbox">
+            <span>Designer Sarees</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" value="salwar-kameez" class="cat-filter-checkbox">
+            <span>Salwar Suits</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" value="indo-western" class="cat-filter-checkbox">
+            <span>Indo-Western</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" value="kidswear" class="cat-filter-checkbox">
+            <span>Kidswear</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Filter: Color Palette -->
+      <div class="filter-group">
+        <div class="filter-title">Color</div>
+        <div class="color-pills" id="color-pills-list">
+          <button class="color-pill-btn active" data-color="all">All</button>
+          <button class="color-pill-btn" data-color="Wine">Wine</button>
+          <button class="color-pill-btn" data-color="Red">Red</button>
+          <button class="color-pill-btn" data-color="Navy">Navy</button>
+          <button class="color-pill-btn" data-color="Green">Green</button>
+          <button class="color-pill-btn" data-color="Gold">Gold</button>
+          <button class="color-pill-btn" data-color="Peach">Peach</button>
+        </div>
+      </div>
+
+      <!-- Filter: Sizes -->
+      <div class="filter-group">
+        <div class="filter-title">Available Sizes</div>
+        <div class="filter-options-list">
+          <label class="filter-checkbox-label"><input type="checkbox" value="XS" class="size-filter-checkbox"> <span>XS (Bust 32")</span></label>
+          <label class="filter-checkbox-label"><input type="checkbox" value="S" class="size-filter-checkbox"> <span>Small (Bust 34")</span></label>
+          <label class="filter-checkbox-label"><input type="checkbox" value="M" class="size-filter-checkbox"> <span>Medium (Bust 36")</span></label>
+          <label class="filter-checkbox-label"><input type="checkbox" value="L" class="size-filter-checkbox"> <span>Large (Bust 38")</span></label>
+          <label class="filter-checkbox-label"><input type="checkbox" value="XL" class="size-filter-checkbox"> <span>XL (Bust 40")</span></label>
+        </div>
+      </div>
+
+      <!-- Filter: Occasion -->
+      <div class="filter-group">
+        <div class="filter-title">Occasion</div>
+        <div class="filter-options-list">
+          <label class="filter-checkbox-label"><input type="checkbox" value="Bridal" class="occasion-filter-checkbox"> <span>Bridal & Reception</span></label>
+          <label class="filter-checkbox-label"><input type="checkbox" value="Navratri" class="occasion-filter-checkbox"> <span>Navratri / Garba</span></label>
+          <label class="filter-checkbox-label"><input type="checkbox" value="Haldi" class="occasion-filter-checkbox"> <span>Haldi / Mehendi</span></label>
+          <label class="filter-checkbox-label"><input type="checkbox" value="Cocktail" class="occasion-filter-checkbox"> <span>Cocktail / Fusion</span></label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Grid & Toolbar Column -->
+    <section>
+      <!-- Toolbar -->
+      <div class="shop-toolbar">
+        <div class="product-count-display" id="product-count-text">
+          Showing 12 of 12 Designs
+        </div>
+
+        <div class="shop-sort-controls">
+          <button class="btn-secondary mobile-filter-trigger" id="open-mobile-filters-btn" style="height: 40px; font-size: 12px; padding: 0 16px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+            Filter Catalog
+          </button>
+
+          <label style="font-size: 13px; color: var(--color-charcoal-muted); font-weight: 500;">Sort By:</label>
+          <select id="sort-select" class="form-select" style="width: auto; height: 40px; font-size: 13px;">
+            <option value="featured">Featured Arrivals</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Alphabetical (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Active Filter Tags Bar -->
+      <div id="active-filter-tags-bar" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;"></div>
+
+      <!-- Product Cards Catalog Grid -->
+      <div class="product-grid-4" id="category-products-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <!-- Rendered dynamically via js/category.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Filter Modal Drawer -->
+  <div class="mobile-filter-modal" id="mobile-filter-modal">
+    <div class="mobile-filter-modal-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--color-border);">
+        <h3 style="font-family: var(--font-serif); font-size: 20px;">Filter Catalog</h3>
+        <button id="close-mobile-filter-btn" style="font-size: 24px; color: var(--color-charcoal);">&times;</button>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <h4 style="font-size: 13px; text-transform: uppercase; font-weight: 600; margin-bottom: 10px;">Category</h4>
+        <div id="mobile-cat-filter-options" style="display: flex; flex-direction: column; gap: 8px;"></div>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h4 style="font-size: 13px; text-transform: uppercase; font-weight: 600; margin-bottom: 10px;">Select Color</h4>
+        <div id="mobile-color-pills" class="color-pills"></div>
+      </div>
+
+      <button class="btn-primary" id="apply-mobile-filters-btn" style="width: 100%;">
+        Apply Filters
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-site">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 12px;">
+            <span class="brand-logo-text" style="color: var(--color-ivory);">Desi Vibe</span>
+            <span class="brand-logo-sub" style="color: var(--color-gold);">Ethnic Fashion · USA</span>
+          </a>
+          <p class="footer-brand-desc">
+            A premium Indian ethnic fashion store based in the USA. Bringing contemporary elegance and heritage craftsmanship to your special moments.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links-list">
+            <li><a href="category.html?cat=lehengas">Wedding Lehengas</a></li>
+            <li><a href="category.html?cat=chaniya-choli">Navratri Chaniya Choli</a></li>
+            <li><a href="category.html?cat=sarees">Designer Silk Sarees</a></li>
+            <li><a href="category.html?cat=salwar-kameez">Salwar Suits & Anarkalis</a></li>
+            <li><a href="category.html?cat=indo-western">Indo-Western Fusion</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Customer Care</h4>
+          <ul class="footer-links-list">
+            <li><a href="product.html?id=DV-301">Inquiry & Fitting Guide</a></li>
+            <li><a href="#" onclick="alert('US Nationwide Shipping: Standard 3-5 business days delivery.'); return false;">USA Shipping Policy</a></li>
+            <li><a href="#" onclick="alert('Returns & Exchanges: Contact our US team within 7 days of delivery.'); return false;">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Boutique Contact (USA)</h4>
+          <p style="font-size: 14px; color: #D4CDC5; line-height: 1.6; margin-bottom: 16px;">
+            <strong>Email:</strong> care@desivibe.us<br>
+            <strong>WhatsApp / Call:</strong> +1 (800) 555-DESI
+          </p>
+          <button class="btn-outline-berry trigger-enquiry-btn" style="color: var(--color-gold-light) !important; border-color: var(--color-gold-light); width: 100%; height: 42px; font-size: 11px;" data-id="DV-301" data-name="Footer Contact Inquiry" data-code="FOOTER">
+            Send General Inquiry
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Desi Vibe Ethnic Fashion USA. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; color: white;">
+        <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-gold-light);">Search Desi Vibe Catalog</span>
+        <button id="close-search-btn" style="color: white; font-size: 28px;">&times;</button>
+      </div>
+      <div class="search-input-wrap">
+        <input type="text" id="global-search-input" placeholder="Search by outfit name, style code (e.g. DV-301), fabric, or category..." />
+      </div>
+      <div class="search-results-dropdown" id="search-results-dropdown"></div>
+    </div>
+  </div>
+
+  <!-- Global Enquiry Modal -->
+  <div class="modal-overlay" id="enquiry-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Enquire About This Piece</h3>
+        <span class="modal-close-btn" id="close-enquiry-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="enquiry-product-summary">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop" id="modal-summary-img" class="enquiry-product-img" alt="Selected Product" />
+          <div>
+            <h4 id="modal-summary-title" style="font-size: 16px; font-weight: 600; color: var(--color-charcoal);">Wine Embroidered Lehenga Set</h4>
+            <div id="modal-summary-code" style="font-size: 12px; color: var(--color-berry); font-weight: 600; margin-top: 4px;">Style Code: DV-301</div>
+          </div>
+        </div>
+
+        <form id="enquiry-form">
+          <input type="hidden" id="enquiry-style-code" name="styleCode" value="DV-301" />
+          <input type="hidden" id="enquiry-product-name" name="productName" value="Wine Embroidered Lehenga Set" />
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Your Name *</label>
+              <input type="text" class="form-input" required placeholder="e.g. Priya Sharma" />
+            </div>
+            <div>
+              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Email Address *</label>
+              <input type="email" class="form-input" required placeholder="name@example.com" />
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Phone / WhatsApp *</label>
+              <input type="tel" class="form-input" required placeholder="+1 (555) 000-0000" />
+            </div>
+            <div>
+              <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Preferred Size</label>
+              <input type="text" id="enquiry-selected-size" class="form-input" placeholder="e.g. Medium (M)" />
+            </div>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--color-charcoal); display: block; margin-bottom: 6px;">Your Question or Customization Request</label>
+            <textarea class="form-textarea" rows="3" placeholder="Ask about price confirmation, available sizing, alterations, or delivery timeline in your US state..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%;">
+            Submit Inquiry to Boutique Team
+          </button>
+        </form>
+
+        <div class="confirmation-box" id="enquiry-confirmation-box"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/category.js"></script>
+</body>
+</html>
